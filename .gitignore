@@ -1,1 +1,75 @@
-node_modules/
+# ----------------------
+# OS
+# ----------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------
+# Environment
+# ----------------------
+.env
+.env.local
+.env.*.local
+
+# ----------------------
+# Node / Next.js
+# ----------------------
+node_modules
+.next
+out
+dist
+coverage
+
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ----------------------
+# Go
+# ----------------------
+bin/
+*.exe
+*.test
+*.out
+vendor/
+
+# Go build cache
+go.work.sum
+
+# ----------------------
+# protobuf / generated
+# ----------------------
+*.pb.go
+*.pb.ts
+*.connect.ts
+*.gen.go
+
+# ----------------------
+# IDE
+# ----------------------
+.vscode/
+.idea/
+
+# ----------------------
+# Docker
+# ----------------------
+docker-data/
+postgres-data/
+
+# ----------------------
+# Database dumps
+# ----------------------
+*.sql
+*.dump
+
+# ----------------------
+# misc
+# ----------------------
+tmp/
+.cache/
