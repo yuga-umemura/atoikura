@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package atoikura.v1;
+
+option go_package = "github.com/yugaumemura/atoikura/gen/go/atoikura/v1;atoikurav1";
+
+service HealthService {
+  rpc Check(CheckRequest) returns (CheckResponse) {}
+}
+
+message CheckRequest {}
+
+message CheckResponse {
+  string status = 1;
+}

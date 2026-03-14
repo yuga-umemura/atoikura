@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: atoikura-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: atoikura
+      POSTGRES_PASSWORD: atoikura
+      POSTGRES_DB: atoikura
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U atoikura"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres-data:
