@@ -1,0 +1,12 @@
+{
+  "name": "atoikura",
+  "version": "1.0.0",
+  "scripts": {
+    "dev:web": "pnpm --filter web dev",
+    "build:web": "pnpm --filter web build",
+    "dev:api": "make api"
+  },
+  "author": "Yuga Umemura",
+  "license": "ISC",
+  "packageManager": "pnpm@10.26.2"
+}
